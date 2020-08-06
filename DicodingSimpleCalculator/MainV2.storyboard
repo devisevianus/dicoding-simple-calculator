@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="We6-Ho-QnY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="qY2-mm-bO1">
+            <objects>
+                <viewController id="We6-Ho-QnY" customClass="ViewController" customModule="DicodingSimpleCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jgK-Qz-xjn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aplikasi Penghitung Luas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5LM-nQ-W06">
+                                <rect key="frame" x="111" y="119" width="192" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Panjang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1c-zL-5P0">
+                                <rect key="frame" x="20" y="186" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgs-OC-1mz">
+                                <rect key="frame" x="20" y="257" width="37" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0g6-Ea-apx">
+                                <rect key="frame" x="20" y="215" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uht-AM-flY">
+                                <rect key="frame" x="20" y="286" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmT-tF-s04">
+                                <rect key="frame" x="184" y="390" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hitung"/>
+                                <connections>
+                                    <action selector="calculate:" destination="We6-Ho-QnY" eventType="touchDown" id="WFy-ib-gxu"/>
+                                    <action selector="resetView:" destination="We6-Ho-QnY" eventType="touchDownRepeat" id="Yp9-mz-VyV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hasil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1j-tP-zu2">
+                                <rect key="frame" x="158" y="428" width="99" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nBH-Ui-hK1" firstAttribute="trailing" secondItem="m1c-zL-5P0" secondAttribute="trailing" constant="333" id="8wq-g9-H6O"/>
+                            <constraint firstItem="m1c-zL-5P0" firstAttribute="leading" secondItem="nBH-Ui-hK1" secondAttribute="leading" constant="20" id="9m1-Ps-5p0"/>
+                            <constraint firstItem="Qgs-OC-1mz" firstAttribute="top" secondItem="0g6-Ea-apx" secondAttribute="bottom" constant="8" id="DEG-E2-cZ3"/>
+                            <constraint firstItem="5LM-nQ-W06" firstAttribute="top" secondItem="nBH-Ui-hK1" secondAttribute="top" constant="75" id="Eo0-sy-f36"/>
+                            <constraint firstItem="m1c-zL-5P0" firstAttribute="top" secondItem="nBH-Ui-hK1" secondAttribute="top" constant="142" id="Iy1-Ov-Bdc"/>
+                            <constraint firstItem="0g6-Ea-apx" firstAttribute="top" secondItem="m1c-zL-5P0" secondAttribute="bottom" constant="8" id="O6p-je-0JG"/>
+                            <constraint firstItem="nBH-Ui-hK1" firstAttribute="trailing" secondItem="5LM-nQ-W06" secondAttribute="trailing" constant="111" id="T6H-h1-Azr"/>
+                            <constraint firstItem="nBH-Ui-hK1" firstAttribute="trailing" secondItem="0g6-Ea-apx" secondAttribute="trailing" constant="20" id="Tzv-Gc-8Ir"/>
+                            <constraint firstItem="5LM-nQ-W06" firstAttribute="leading" secondItem="nBH-Ui-hK1" secondAttribute="leading" constant="111" id="gXw-fJ-7am"/>
+                            <constraint firstItem="0g6-Ea-apx" firstAttribute="leading" secondItem="nBH-Ui-hK1" secondAttribute="leading" constant="20" id="jxB-fa-yK0"/>
+                            <constraint firstItem="nBH-Ui-hK1" firstAttribute="trailing" secondItem="Uht-AM-flY" secondAttribute="trailing" constant="20" id="mci-xF-NsR"/>
+                            <constraint firstItem="nBH-Ui-hK1" firstAttribute="trailing" secondItem="Qgs-OC-1mz" secondAttribute="trailing" constant="357" id="mv5-uJ-bt7"/>
+                            <constraint firstItem="Uht-AM-flY" firstAttribute="leading" secondItem="nBH-Ui-hK1" secondAttribute="leading" constant="20" id="rih-mK-4m1"/>
+                            <constraint firstItem="Uht-AM-flY" firstAttribute="top" secondItem="Qgs-OC-1mz" secondAttribute="bottom" constant="8" id="u4H-oM-Nb2"/>
+                            <constraint firstItem="Qgs-OC-1mz" firstAttribute="leading" secondItem="nBH-Ui-hK1" secondAttribute="leading" constant="20" id="xeE-D4-D1l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nBH-Ui-hK1"/>
+                    </view>
+                    <connections>
+                        <outlet property="height" destination="0g6-Ea-apx" id="wcU-vg-VFY"/>
+                        <outlet property="result" destination="N1j-tP-zu2" id="U9N-EJ-ILb"/>
+                        <outlet property="width" destination="Uht-AM-flY" id="eyw-Lw-jLc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JiF-LZ-vKq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-168.11594202898553" y="4.6875"/>
+        </scene>
+    </scenes>
+</document>
